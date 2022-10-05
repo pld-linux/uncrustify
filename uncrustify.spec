@@ -4,7 +4,7 @@ Version:	0.75.1
 Release:	1
 License:	GPL v2
 Group:		Development/Tools
-Source0:	http://downloads.sourceforge.net/uncrustify/%{name}-%{version}.tar.gz
+Source0:	https://downloads.sourceforge.net/uncrustify/%{name}-%{version}.tar.gz
 # Source0-md5:	0bdae8a77605220e5790ee140e7a7018
 URL:		http://uncrustify.sourceforge.net/
 BuildRequires:	cmake
