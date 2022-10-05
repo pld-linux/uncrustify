@@ -11,6 +11,7 @@ BuildRequires:	cmake >= 3.2
 BuildRequires:	libstdc++-devel >= 6:4.8.1
 BuildRequires:	python3
 BuildRequires:	python3-modules
+BuildRequires:	rpmbuild(macros) >= 1.605
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
