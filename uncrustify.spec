@@ -7,8 +7,10 @@ Group:		Development/Tools
 Source0:	https://downloads.sourceforge.net/uncrustify/%{name}-%{version}.tar.gz
 # Source0-md5:	0bdae8a77605220e5790ee140e7a7018
 URL:		http://uncrustify.sourceforge.net/
-BuildRequires:	cmake
-BuildRequires:	libstdc++-devel
+BuildRequires:	cmake >= 3.2
+BuildRequires:	libstdc++-devel >= 6:4.8.1
+BuildRequires:	python3
+BuildRequires:	python3-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
