@@ -1,11 +1,11 @@
 Summary:	Source code beautifier
 Name:		uncrustify
-Version:	0.68.1
+Version:	0.75.1
 Release:	1
 License:	GPL v2
 Group:		Development/Tools
 Source0:	http://downloads.sourceforge.net/uncrustify/%{name}-%{version}.tar.gz
-# Source0-md5:	bc184fe715cf625bda6869ce2a2a2b54
+# Source0-md5:	0bdae8a77605220e5790ee140e7a7018
 URL:		http://uncrustify.sourceforge.net/
 BuildRequires:	cmake
 BuildRequires:	libstdc++-devel
@@ -16,7 +16,7 @@ Uncrustify is a configurable source code beautifier for C, C++, C#,
 ObjectiveC, D, Java, Pawn and VALA.
 
 %prep
-%setup -qc
+%setup -q
 
 %build
 install -d build
@@ -35,7 +35,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS BUGS ChangeLog CODEOWNERS Comments.txt CONTRIBUTING.md COPYING HELP LIMITATIONS.txt NEWS README.md TESTING release-steps.txt working.txt
+%doc AUTHORS BUGS ChangeLog CODEOWNERS Comments.txt CONTRIBUTING.md COPYING HELP LIMITATIONS.txt NEWS README.md TESTING release-process.rst
 %doc documentation
 %attr(755,root,root) %{_bindir}/uncrustify
 %{_mandir}/man1/uncrustify.1*
